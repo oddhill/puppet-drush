@@ -1,0 +1,4 @@
+# Drush class
+class drush {
+  
+}
