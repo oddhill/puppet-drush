@@ -1,5 +1,5 @@
 # Drush class
-class drush {
+class drush ($version = '7.0.0') {
   # Make sure drush is not installed from homebrew
   package {
     'drush':
@@ -8,7 +8,7 @@ class drush {
 
   # Install using composer
   exec {'install-drush':
-    command => 'bash -c "source /opt/boxen/env.sh && composer global require drush/drush:7.0.0"',
+    command => 'bash -c "source /opt/boxen/env.sh && composer global require drush/drush:#{$version}"',
     require => Class['php::composer'],
   }
 
