@@ -1,3 +1,4 @@
+# Install a drush plugin
 define drush::plugin ($name) {
 
   exec {"drush-dl-plugin-${name}":
