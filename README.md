@@ -2,6 +2,8 @@
 
 Install `drush` via Composer.
 
+[![Build Status](https://travis-ci.org/jenslind/puppet-drush.svg?branch=master)](https://travis-ci.org/jenslind/puppet-drush)
+
 ## Usage
 
 ```puppet
