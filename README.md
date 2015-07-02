@@ -16,3 +16,4 @@ class { 'drush':
 
 * `boxen`
 * `php & composer`
+* `node`
