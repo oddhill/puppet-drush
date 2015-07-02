@@ -10,6 +10,11 @@ Install `drush` via Composer.
 class { 'drush':
   version => '8.0.0-beta11' # Drush version
 }
+
+# Install plugins
+drush::plugin {'drush-registry-rebuild':
+  name => 'registry_rebuild'
+}
 ```
 
 ## Required Puppet Modules
