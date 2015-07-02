@@ -4,6 +4,6 @@ require 'spec_helper'
 # or read http://rspec-puppet.com/tutorial/
 describe 'drush' do
   it do
-    
+    should contain_class('drush')
   end
 end
