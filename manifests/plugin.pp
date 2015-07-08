@@ -5,6 +5,6 @@ define drush::plugin ($name) {
     cwd     => "/Users/${::boxen_user}/.drush",
     command => "bash -c 'source /opt/boxen/env.sh && drush dl ${name} && drush cc drush'",
     creates => "/Users/${::boxen_user}/.drush/${name}",
-    require => Exec['install-drush'],
+    require => Class['drush'],
   }
 }
