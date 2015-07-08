@@ -14,9 +14,9 @@ class drush ($version = '7.0.0') {
   }
 
   # Make sure the `.drush` folder exists
-  file {"/Users/${boxen_user}/.drush":
+  file {"/Users/${::boxen_user}/.drush":
     ensure => directory,
-    owner  => $boxen_user,
+    owner  => $::boxen_user,
     group  => staff,
   }
 }
