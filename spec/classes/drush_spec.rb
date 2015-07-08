@@ -5,5 +5,11 @@ require 'spec_helper'
 describe 'drush' do
   it do
     should contain_class('drush')
+
+    # Make sure our exec exists
+    should contain_exec('install-drush')
+
+    # We do not want drush installed from homebrew
+    should contain_package('drush').with_ensure('absent')
   end
 end
